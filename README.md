@@ -12,7 +12,7 @@ are carried out collectively by the network. WIKI Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the WIKI Core software, see https://www.wikiproject.org/.
+the WIKI Core software, see https://www.altcoinwiki.io
 
 
 License
