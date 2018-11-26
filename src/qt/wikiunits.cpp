@@ -19,9 +19,9 @@ WIKIUnits::WIKIUnits(QObject *parent):
 QList<WIKIUnits::Unit> WIKIUnits::availableUnits()
 {
     QList<WIKIUnits::Unit> unitlist;
-    unitlist.append(WIKI);
-    unitlist.append(mWIKI);
-    unitlist.append(uWIKI);
+    unitlist.append(WIK);
+    unitlist.append(mWIK);
+    unitlist.append(uWIK);
     unitlist.append(duffs);
     return unitlist;
 }
@@ -30,9 +30,9 @@ bool WIKIUnits::valid(int unit)
 {
     switch(unit)
     {
-    case WIKI:
-    case mWIKI:
-    case uWIKI:
+    case WIK:
+    case mWIK:
+    case uWIK:
     case duffs:
         return true;
     default:
@@ -46,9 +46,9 @@ QString WIKIUnits::name(int unit)
     {
         switch(unit)
         {
-            case WIKI: return QString("WIKI");
-            case mWIKI: return QString("mWIKI");
-            case uWIKI: return QString::fromUtf8("μWIKI");
+            case WIK: return QString("WIK");
+            case mWIK: return QString("mWIK");
+            case uWIK: return QString::fromUtf8("μWIK");
             case duffs: return QString("duffs");
             default: return QString("???");
         }
@@ -57,9 +57,9 @@ QString WIKIUnits::name(int unit)
     {
         switch(unit)
         {
-            case WIKI: return QString("tWIKI");
-            case mWIKI: return QString("mtWIKI");
-            case uWIKI: return QString::fromUtf8("μtWIKI");
+            case WIK: return QString("tWIK");
+            case mWIK: return QString("mtWIK");
+            case uWIK: return QString::fromUtf8("μtWIK");
             case duffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -72,10 +72,10 @@ QString WIKIUnits::description(int unit)
     {
         switch(unit)
         {
-            case WIKI: return QString("WIKI");
-            case mWIKI: return QString("Milli-WIKI (1 / 1" THIN_SP_UTF8 "000)");
-            case uWIKI: return QString("Micro-WIKI (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-WIKI (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case WIK: return QString("WIK");
+            case mWIK: return QString("Milli-WIK (1 / 1" THIN_SP_UTF8 "000)");
+            case uWIK: return QString("Micro-WIK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-WIK (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -83,10 +83,10 @@ QString WIKIUnits::description(int unit)
     {
         switch(unit)
         {
-            case WIKI: return QString("TestWIKIs");
-            case mWIKI: return QString("Milli-TestWIKI (1 / 1" THIN_SP_UTF8 "000)");
-            case uWIKI: return QString("Micro-TestWIKI (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestWIKI (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case WIK: return QString("TestWIKs");
+            case mWIK: return QString("Milli-TestWIK (1 / 1" THIN_SP_UTF8 "000)");
+            case uWIK: return QString("Micro-TestWIK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-TestWIK (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -96,9 +96,9 @@ qint64 WIKIUnits::factor(int unit)
 {
     switch(unit)
     {
-    case WIKI:  return 100000000;
-    case mWIKI: return 100000;
-    case uWIKI: return 100;
+    case WIK:  return 100000000;
+    case mWIK: return 100000;
+    case uWIK: return 100;
     case duffs: return 1;
     default:   return 100000000;
     }
@@ -108,9 +108,9 @@ int WIKIUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case WIKI: return 8;
-    case mWIKI: return 5;
-    case uWIKI: return 2;
+    case WIK: return 8;
+    case mWIK: return 5;
+    case uWIK: return 2;
     case duffs: return 0;
     default: return 0;
     }

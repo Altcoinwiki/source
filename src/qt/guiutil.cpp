@@ -184,7 +184,7 @@ bool parseWIKIURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!WIKIUnits::parse(WIKIUnits::WIKI, i->second, &rv.amount))
+                if(!WIKIUnits::parse(WIKIUnits::WIK, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -223,7 +223,7 @@ QString formatWIKIURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(WIKIUnits::format(WIKIUnits::WIKI, info.amount, false, WIKIUnits::separatorNever));
+        ret += QString("?amount=%1").arg(WIKIUnits::format(WIKIUnits::WIK, info.amount, false, WIKIUnits::separatorNever));
         paramCount++;
     }
 

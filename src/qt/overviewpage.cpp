@@ -39,7 +39,7 @@ class TxViewDelegate : public QAbstractItemDelegate
     Q_OBJECT
 public:
     TxViewDelegate(const PlatformStyle *_platformStyle, QObject *parent=nullptr):
-        QAbstractItemDelegate(parent), unit(WIKIUnits::WIKI),
+        QAbstractItemDelegate(parent), unit(WIKIUnits::WIK),
         platformStyle(_platformStyle)
     {
 
