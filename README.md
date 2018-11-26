@@ -2,9 +2,6 @@ WIKI Core 1.3
 ===============================
 
 
-https://www.wikiereigncoin.cc
-https://www.singamining.com
-
 What is WIKI?
 ----------------
 
